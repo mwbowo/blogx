@@ -1,11 +1,10 @@
-version: "3"
+version: '3.0'
 services:
-  blogx:
-    image: mwbowo/blogx:1.0
-    container_name: web-blogx
-    restart: always
-    volumes:
-      - ./.env.example:/blogx/.env
+  web:
+    container_name: weblogx
+    image: mwbowo/blogx:${GIT_COMMIT_SHORT}
     ports:
       - 8000:8000
+    volumes:
+      - ./.env.example:/blogx/.env
     command: 'php artisan serve --host=0.0.0.0'
