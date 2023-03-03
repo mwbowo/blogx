@@ -80,5 +80,5 @@ vendor/bin/sail artisan migrate
 
 ## Credit
 
-Create a Blog in Laravel and Livewire
+Create a Blog in Laravel and Livewire & Bowo
 >[Devdojo](https://devdojo.com/tnylea/create-a-blog-in-laravel-and-livewire)
